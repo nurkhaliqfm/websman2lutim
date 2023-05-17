@@ -16,7 +16,7 @@ import {
 function Footer() {
   return (
     <div className="flex flex-col bg-black w-full font-montserrat text-white justify-center text-center">
-      <div className="flex flex-col md:flex-row justify-center my-[20px] space-y-4 md:space-y-0 md:space-x-10">
+      <div className="mt-8 flex flex-col md:flex-row justify-center my-[20px] space-y-4 md:space-y-0 md:space-x-10">
         <div className="flex w-full md:w-1/3 lg:w-[320px] justify-center gap-2">
           <div className="brand-logo flex w-auto">
             <img src={LogoLutim} alt="Logo" className="w-fit p h-[48px]" />
