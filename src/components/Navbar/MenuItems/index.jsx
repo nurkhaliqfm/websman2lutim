@@ -12,10 +12,11 @@ const MenuItems = ({ showMenu, active }) => {
   return (
     <>
       <ul
+        id="Sidenav"
         className={
           active
-            ? "mdx:hidden flex flex-col items-center fixed inset-0 bg-black justify-center left-0 sm:left-1/3 gap-3 p-8 overflow-y-scroll"
-            : "hidden"
+            ? "mdx:hidden flex flex-col items-center fixed inset-0 justify-center sm:left-0 gap-3 p-8 overflow-y-scroll"
+            : "hidden left-0"
         }
       >
         <AiOutlineClose
@@ -29,7 +30,7 @@ const MenuItems = ({ showMenu, active }) => {
                 heading !== val.slug ? setHeading(val.slug) : setHeading("")
               }
               key={index}
-              className="p-2 w-full text-center hover:text-yellow-400 hover:border-b-yellow-400 hover:border-b-2 "
+              className="p-2 w-full cursor-pointer text-center hover:text-yellow-400 hover:border-b-yellow-400 hover:border-b-2 "
             >
               <div>{val.name}</div>
               <div
@@ -52,7 +53,7 @@ const MenuItems = ({ showMenu, active }) => {
             <li
               key={index}
               onClick={() => setHeading("")}
-              className="p-2 w-full text-center hover:text-yellow-400 hover:border-b-yellow-400 hover:border-b-2"
+              className="p-2 w-full cursor-pointer text-center hover:text-yellow-400 hover:border-b-yellow-400 hover:border-b-2"
             >
               {val.name}
             </li>

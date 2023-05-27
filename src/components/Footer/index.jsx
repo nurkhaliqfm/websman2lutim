@@ -1,12 +1,10 @@
 import React from "react";
 import Logo from "assets/Images/Logo.svg";
 import LogoLutim from "assets/Images/logo-lutim.svg";
-import { AiOutlineAppstore, AiOutlineTrademark } from "react-icons/ai";
 import {
   BsEnvelopeAtFill,
   BsFacebook,
   BsInstagram,
-  BsMailbox,
   BsPhone,
   BsPinMapFill,
   BsWhatsapp,

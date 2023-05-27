@@ -27,7 +27,7 @@ const NavbarTransparent = (scrollPosition) => {
       <div
         className={
           scrollPosition.position > 200
-            ? "w-full max-w-7xl my-4 md:mx-10 mx-4 flex justify-between"
+            ? "w-full max-w-7xl mdx:my-2 my-4 md:mx-10 mx-4 flex justify-between"
             : "w-full max-w-7xl my-7 md:mx-10 mx-4 flex justify-between"
         }
       >
